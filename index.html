@@ -92,6 +92,12 @@
     height: 380px
 }
 
+.main-navbarfix{
+  position:relative;
+  width: 100% !important;
+  display: block !important;
+}
+
 .home-testimonial-bottom {
     background-color: #f8f8f8;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
@@ -167,210 +173,228 @@
   >
     <div id="app">
       <div id="main" class="layout-horizontal">
-        <header class="">
-          <div class="header-top">
-            <div class="container">
+        <header class="navbackgroundcolor">
+          <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light  navbackgroundcolor">
+            <div class="container-fluid">
               <div class="logo">
                 <a href="index.html"
                   ><img
-                    src="images/greenFinLogo.jpeg"
+                    src="images/greenFinLogo.png"
                     alt="Logo"
                     srcset=""
                     style="height: 90px !important"
                 /></a>
               </div>
-              <div class="header-top-right">
-                <div class="dropdown">
-                  <a
-                    href="#"
-                    class="user-dropdown d-flex dropend"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <div class="avatar avatar-md2">
-                      <img src="assets/images/faces/1.jpg" alt="Avatar" />
-                    </div>
-                    <div class="text">
-                      <h6 class="user-dropdown-name">UserName</h6>
-                      <p class="user-dropdown-status text-sm text-muted">
-                        yourEmail@gmail.com
-                      </p>
-                    </div>
-                  </a>
-                  <ul
-                    class="dropdown-menu dropdown-menu-end shadow-lg"
-                    aria-labelledby="dropdownMenuButton1"
-                  >
-                    <li><a class="dropdown-item" href="#">My Account</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="auth-login.html">Logout</a>
-                    </li>
-                  </ul>
-                </div>
 
-                <!-- Burger button responsive -->
-                <a href="#" class="burger-btn d-block d-xl-none">
-                  <i class="bi bi-justify fs-3"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <nav class="main-navbar navbackgroundcolor">
-            <div class="container">
-              <ul>
-                <!-- <li class="menu-item">
-                  <a href="index.html" class="menu-link">
-                    <i class="bi bi-grid-fill"></i>
-                    <span>Dashboard</span>
-                  </a>
-                </li> -->
+              <button class="burger-btn d-block d-xl-none btn" onclick="openmenu()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-justify fs-3"></i>
+              </button>
+              <!-- <a href="#" class="burger-btn d-block d-xl-none">
+                <i class="bi bi-justify fs-3"></i>
+              </a> -->
 
-                <li class="menu-item has-sub">
-                  <a href="#" class="menu-link">
-                    <!-- <i class="bi bi-stack"></i> -->
-                    <span>For project owners</span>
-                  </a>
-                  <div class="submenu">
-                    <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
-                    <div class="submenu-group-wrapper">
-                      <ul class="submenu-group">
-                        <li class="submenu-item">
-                          <a href="#" class="submenu-link">Equipment Import</a>
-                        </li>
+              <!-- <div class="" > -->
+                <!-- <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li> 
+                </ul> -->
+                <nav class="main-navbar navbackgroundcolor "  id="navbarNav">
+                  <div class="container">
+                    <ul class="navbar-nav">
+                      <!-- <li class="menu-item">
+                        <a href="index.html" class="menu-link">
+                          <i class="bi bi-grid-fill"></i>
+                          <span>Dashboard</span>
+                        </a>
+                      </li> -->
+      
+                      <li class="menu-item has-sub nav-item">
+                        <a href="#" class="menu-link">
+                          <!-- <i class="bi bi-stack"></i> -->
+                          <span>For project owners</span>
+                        </a>
+                        <div class="submenu">
+                          <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
+                          <div class="submenu-group-wrapper">
+                            <ul class="submenu-group">
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link">Equipment Import</a>
+                              </li>
+      
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link">Equipment Finance</a>
+                              </li>
+      
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link"
+                                  >Hydropower financing</a
+                                >
+                              </li>
+      
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link">Electric Mobility</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+      
+                      <li class="menu-item active has-sub">
+                        <a href="#" class="menu-link">
+                          <!-- <i class="bi bi-grid-1x2-fill"></i> -->
+                          <span>For Investors</span>
+                        </a>
+                        <div class="submenu">
+                          <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
+                          <div class="submenu-group-wrapper">
+                            <ul class="submenu-group">
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link"
+                                  >Solar energy financing</a
+                                >
+                              </li>
+      
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link"
+                                  >Wind energy financing</a
+                                >
+                              </li>
+      
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link"
+                                  >Hydropower financing</a
+                                >
+                              </li>
+      
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link">Electric Mobility</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+      
+                      <li class="menu-item has-sub">
+                        <a href="#" class="menu-link">
+                          <!-- <i class="bi bi-file-earmark-medical-fill"></i> -->
+                          <span>Partners</span>
+                        </a>
+                        <div class="submenu">
+                          <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
+                          <div class="submenu-group-wrapper">
+                            <ul class="submenu-group">
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link">Brokers & Agents</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+      
+                      <li class="menu-item">
+                        <a href="#" class="menu-link">
+                          <!-- <i class="bi bi-table"></i> -->
+                          <span>Solutions</span>
+                        </a>
+                      </li>
+      
+                      <li class="menu-item has-sub">
+                        <a href="#" class="menu-link">
+                          <!-- <i class="bi bi-plus-square-fill"></i> -->
+                          <span>Publications</span>
+                        </a>
+                        <div class="submenu">
+                          <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
+                          <div class="submenu-group-wrapper">
+                            <ul class="submenu-group">
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link">White paper</a>
+                              </li>
+      
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link"
+                                  >IREIA Country Ranking</a
+                                >
+                              </li>
+      
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link">Blog</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+      
+                      <li class="menu-item has-sub">
+                        <a href="#" class="menu-link">
+                          <!-- <i class="bi bi-file-earmark-fill"></i> -->
+                          <span>About us</span>
+                        </a>
+                        <div class="submenu">
+                          <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
+                          <div class="submenu-group-wrapper">
+                            <ul class="submenu-group">
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link">Team</a>
+                              </li>
+      
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link">Mission</a>
+                              </li>
+      
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link">News</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
 
-                        <li class="submenu-item">
-                          <a href="#" class="submenu-link">Equipment Finance</a>
-                        </li>
+                      <button
+                class="btn btn-primary btn "
+                type="button"
+                style="
+                  display: inline-block;
+                  margin-bottom: 0;
+                  background-color: #0e185f;
+                  border: 1px solid white;
+                "
+              >
+                      Login
+              </button>
+              <button
+              class="btn btn-primary btn "
+              type="button"
+              style="
+                display: inline-block;
+                margin-bottom: 0;
+                background-color: #0e185f;
+                border: 1px solid white;
+              "
+            >
+                    SignUp
+            </button>
 
-                        <li class="submenu-item">
-                          <a href="#" class="submenu-link"
-                            >Hydropower financing</a
-                          >
-                        </li>
-
-                        <li class="submenu-item">
-                          <a href="#" class="submenu-link">Electric Mobility</a>
-                        </li>
-                      </ul>
-                    </div>
+                    </ul>
                   </div>
-                </li>
+                </nav>
+              <!-- </div> -->
 
-                <li class="menu-item active has-sub">
-                  <a href="#" class="menu-link">
-                    <!-- <i class="bi bi-grid-1x2-fill"></i> -->
-                    <span>For Investors</span>
-                  </a>
-                  <div class="submenu">
-                    <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
-                    <div class="submenu-group-wrapper">
-                      <ul class="submenu-group">
-                        <li class="submenu-item">
-                          <a href="#" class="submenu-link"
-                            >Solar energy financing</a
-                          >
-                        </li>
 
-                        <li class="submenu-item">
-                          <a href="#" class="submenu-link"
-                            >Wind energy financing</a
-                          >
-                        </li>
-
-                        <li class="submenu-item">
-                          <a href="#" class="submenu-link"
-                            >Hydropower financing</a
-                          >
-                        </li>
-
-                        <li class="submenu-item">
-                          <a href="#" class="submenu-link">Electric Mobility</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-
-                <li class="menu-item has-sub">
-                  <a href="#" class="menu-link">
-                    <!-- <i class="bi bi-file-earmark-medical-fill"></i> -->
-                    <span>Partners</span>
-                  </a>
-                  <div class="submenu">
-                    <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
-                    <div class="submenu-group-wrapper">
-                      <ul class="submenu-group">
-                        <li class="submenu-item">
-                          <a href="#" class="submenu-link">Brokers & Agents</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-
-                <li class="menu-item">
-                  <a href="#" class="menu-link">
-                    <!-- <i class="bi bi-table"></i> -->
-                    <span>Solutions</span>
-                  </a>
-                </li>
-
-                <li class="menu-item has-sub">
-                  <a href="#" class="menu-link">
-                    <!-- <i class="bi bi-plus-square-fill"></i> -->
-                    <span>Publications</span>
-                  </a>
-                  <div class="submenu">
-                    <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
-                    <div class="submenu-group-wrapper">
-                      <ul class="submenu-group">
-                        <li class="submenu-item">
-                          <a href="#" class="submenu-link">White paper</a>
-                        </li>
-
-                        <li class="submenu-item">
-                          <a href="#" class="submenu-link"
-                            >IREIA Country Ranking</a
-                          >
-                        </li>
-
-                        <li class="submenu-item">
-                          <a href="#" class="submenu-link">Blog</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-
-                <li class="menu-item has-sub">
-                  <a href="#" class="menu-link">
-                    <!-- <i class="bi bi-file-earmark-fill"></i> -->
-                    <span>About us</span>
-                  </a>
-                  <div class="submenu">
-                    <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
-                    <div class="submenu-group-wrapper">
-                      <ul class="submenu-group">
-                        <li class="submenu-item">
-                          <a href="#" class="submenu-link">Team</a>
-                        </li>
-
-                        <li class="submenu-item">
-                          <a href="#" class="submenu-link">Mission</a>
-                        </li>
-
-                        <li class="submenu-item">
-                          <a href="#" class="submenu-link">News</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-              </ul>
             </div>
           </nav>
+          </div>
         </header>
 
         <div
@@ -418,10 +442,10 @@
           </div>
         </div>
 
-        <div class="container-fluid bg-white">
-          <div class="container">
+        <div class="container-fluid bg-white ">
+          <div class="container pt-5">
             <div class="row">
-              <div class="col-md-4 p-5">
+              <div class="col-md-4">
                 <div
                   class="card bg-light"
                   style="
@@ -437,7 +461,7 @@
                   <!-- <p class="h5 p-4 text-center text-capitalize">Investor</p> -->
                 </div>
               </div>
-              <div class="col-md-4 p-5">
+              <div class="col-md-4 ">
                 <div
                   class="card p-5 bg-light"
                   style="
@@ -452,7 +476,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 p-5">
+              <div class="col-md-4">
                 <div
                   class="card p-5 bg-light"
                   style="
@@ -470,7 +494,7 @@
             </div>
 
             <div class="row">
-              <div class="col-md-4 p-5 offset-md-2">
+              <div class="col-md-4  offset-md-2">
                 <div
                   class="card bg-light"
                   style="
@@ -491,7 +515,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-4 p-5">
+              <div class="col-md-4 ">
                 <div
                   class="card p-5 bg-light"
                   style="
@@ -520,7 +544,7 @@
             <div class="card">
               <div class="card-content">
                 <div class="card-body">
-                  <h4 class="card-title mb-0 text-capitalize" style="color: #637b24">
+                  <h4 class="card-title mb-0" style="color: #637b24">
                     GreenFIN.ai the best renewable energy company
                   </h4>
                 </div>
@@ -552,14 +576,12 @@
               Digital B2B platform for ESG
               investments
             </p>
-            <hr
-              style="
+            <hr style="
                 height: 5px;
                 width: 100px;
                 background-color: #0e185f !important;
                 border: #0e185f;
-              "
-            />
+              ">
             <p class="h5 text-capitalize" style="color: #637b24">
               Investors access a large portfolio of renewable energy
 projects.
@@ -576,10 +598,7 @@ projects.
               workflow. Making green investments fast, easy, liquid and economically viable
               for all parties involved.
             </p>
-            <button
-              class="btn btn-primary btn-lg"
-              type="button"
-              style="
+            <button class="btn btn-primary btn-lg" type="button" style="
                 padding-top: 18px !important;
                 padding-bottom: 18px !important;
                 min-width: 192px;
@@ -587,8 +606,7 @@ projects.
                 margin-bottom: 0;
                 background-color: #0e185f;
                 border: 1px solid rgb(0, 0, 0);
-              "
-            >
+              ">
               Sign Up For Free
             </button>
           </div>
@@ -603,36 +621,30 @@ projects.
             "
           ></div>
         </div>
+
         <div class="container-fluid">
           <div class="container"></div>
         </div>
 
-        <div class="container-fluid">
-          <div class="container pt-5">
-            <p class="h3" style="color: #637b24">
+<div class="container-fluid">
+           <div class="container pt-5">
+            <p class="h3 text-capitalize" style="color: #637b24">
               Easy. Hassle-free. Global Financing
             </p>
-            <hr
-              style="
+            <hr style="
                 height: 5px;
                 width: 100px;
                 background-color: #0e185f !important;
                 border: #0e185f;
-              "
-            />
+              ">
             <div class="row">
               <div class="col-lg-4">
-                <div class="card p-4" style="height: 392.8px">
+                <div class="card p-4" >
                   <div class="text-center">
-                    <img
-                      src="https://i0.wp.com/positiveenergylimited.com/wp-content/uploads/2019/11/icon1-1.png?w=171&ssl=1"
-                      alt=""
-                      height="100px"
-                      width="100px"
-                    />
+                    <img src="https://i0.wp.com/positiveenergylimited.com/wp-content/uploads/2019/11/icon1-1.png?w=171&amp;ssl=1" alt="" height="100px" width="100px">
                   </div>
                   <p class="text-dark text-center h4">Deal sourcing</p>
-                  <p class="text-center text-dark">
+                  <p class="text-center text-dark text-capitalize">
                     Our BD team is spread in Emerging markets hunting for RIGHT Projects from
 
                     small , Mid size to Large size. (0,5MW to 500MW)
@@ -640,34 +652,41 @@ projects.
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="card p-4" style="height: 392.8px">
+                <div class="card p-4" >
                   <div class="text-center">
-                    <img
-                      src="https://i0.wp.com/positiveenergylimited.com/wp-content/uploads/2019/11/icon2-1.png?w=171&ssl=1"
-                      alt=""
-                      height="100px"
-                      width="100px"
-                    />
+                    <img src="https://i0.wp.com/positiveenergylimited.com/wp-content/uploads/2019/11/icon2-1.png?w=171&amp;ssl=1" alt="" height="100px" width="100px">
                   </div>
                   <p class="text-dark text-center h4">Match Making</p>
-                  <p class="text-center text-dark">
+                  <p class="text-center text-dark text-capitalize">
                     Our proprietary match making technology using algorithms and machine
                     learning ensures the right investor is mapped to the right project
                   </p>
                 </div>
               </div>
+
               <div class="col-lg-4">
+                <div class="card p-4" >
+                  <div class="text-center">
+                    <img src="https://i0.wp.com/positiveenergylimited.com/wp-content/uploads/2019/11/icon3-1.png?w=171&amp;ssl=1" alt="" height="100px" width="100px">
+                  </div>
+                  <p class="text-dark text-center h4">EPC Support</p>
+                  <p class="text-center text-dark text-capitalize">
+                    We have created an ecosystem whereby we provide full EPC support from within
+              
+                    the ecosystem for select projects.
+                  </p>
+                </div>
+              </div>
+              </div>
+              <div class="row">
+
+              <div class="col-lg-4 offset-md-2">
                 <div class="card p-4" style="height: 392.8px">
                   <div class="text-center">
-                    <img
-                      src="https://i0.wp.com/positiveenergylimited.com/wp-content/uploads/2019/11/icon3-1.png?w=171&ssl=1"
-                      alt=""
-                      height="100px"
-                      width="100px"
-                    />
+                    <img src="https://i0.wp.com/positiveenergylimited.com/wp-content/uploads/2019/11/icon3-1.png?w=171&amp;ssl=1" alt="" height="100px" width="100px">
                   </div>
-                  <p class="text-dark text-center h4">Asset Financing</p>
-                  <p class="text-center text-dark">
+                  <p class="text-dark text-center h4 text-capitalize">Asset Financing</p>
+                  <p class="text-center text-dark text-capitalize">
                     We provide investors with access to diversified renewable energy assets offering
 predictable returns in various emerging markets. These projects are KYC
 qualified with deal room access to investors to review all documents and make
@@ -676,33 +695,12 @@ an informed decision.
                   </p>
                 </div>
               </div>
-              <div class="col-lg-4">
-                <div class="card p-4" style="height: 392.8px">
-                  <div class="text-center">
-                    <img
-                      src="https://i0.wp.com/positiveenergylimited.com/wp-content/uploads/2019/11/icon3-1.png?w=171&ssl=1"
-                      alt=""
-                      height="100px"
-                      width="100px"
-                    />
-                  </div>
-                  <p class="text-dark text-center h4">EPC Support</p>
-                  <p class="text-center text-dark">
-                    We have created an ecosystem whereby we provide full EPC support from within
 
-                    the ecosystem for select projects.
-                  </p>
-                </div>
-              </div>
+
               <div class="col-lg-4">
                 <div class="card p-4" style="height: 392.8px">
                   <div class="text-center">
-                    <img
-                      src="https://i0.wp.com/positiveenergylimited.com/wp-content/uploads/2019/11/icon5.png?w=171&ssl=1"
-                      alt=""
-                      height="100px"
-                      width="100px"
-                    />
+                    <img src="https://i0.wp.com/positiveenergylimited.com/wp-content/uploads/2019/11/icon5.png?w=171&amp;ssl=1" alt="" height="100px" width="100px">
                   </div>
                   <p class="text-dark text-center h4">Digital Due Diligence</p>
                   <p class="text-center text-dark">
@@ -714,6 +712,7 @@ allowing users to access and upload all project related documents online.
 the ecosystem for select projects. -->
                 </div>
               </div>
+              </div>
             </div>
           </div>
         </div>
@@ -723,7 +722,7 @@ the ecosystem for select projects. -->
         <div class="container-fluid">
           <div class="container">
             <!-- <p class="h3 ">Simplifying renewable energy finance with digital technology</p> -->
-            <p class="h3 maincolorgreen">
+            <p class="h3 maincolorgreen text-capitalize">
               Simplifying renewable energy finance with digital technology
             </p>
             <hr
@@ -743,7 +742,7 @@ the ecosystem for select projects. -->
                 "
               ></div>
               <div class="col-lg-7 p-4">
-                <p class="h5">
+                <p class="h5 text-capitalize">
                   Please fill out the fields below to download our white paper
                   to learn the impact of digital technology on the investment
                   process.
@@ -812,7 +811,7 @@ the ecosystem for select projects. -->
 
 
 
-        <div class="container-fluild">
+        <div class="container-fluild"  style="position: relative;">
           <section class="home-testimonial">
             <div class="container-fluid">
                 <div class="row d-flex justify-content-center testimonial-pos">
@@ -820,7 +819,7 @@ the ecosystem for select projects. -->
                         <h3>Accolades</h3>
                     </div>
                     <div class="col-md-12 d-flex justify-content-center">
-                        <h2>Explore experience</h2>
+                        <h2 class="text-capitalize">Explore experience</h2>
                     </div>
                 </div>
                 <section class="home-testimonial-bottom">
@@ -829,30 +828,30 @@ the ecosystem for select projects. -->
                             <div class="col-md-4 style-3">
                                 <div class="tour-item ">
                                     <div class="tour-desc bg-white">
-                                        <div class="tour-text color-grey-3 text-center">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s”</div>
+                                        <div class="tour-text color-grey-3 text-center text-capitalize">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s”</div>
                                         <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="https://www.vivantaa.com/wp-content/uploads/elementor/thumbs/IMG-20211011-WA0015-peeo67683m789tf1qn2rq8v2j9csxlgu60w8ehxth8.jpg" alt=""></div>
-                                        <div class="link-name d-flex justify-content-center">Balbir Kaur</div>
-                                        <div class="link-position d-flex justify-content-center">lorem</div>
+                                        <div class="link-name d-flex justify-content-center text-capitalize">Balbir Kaur</div>
+                                        <div class="link-position d-flex justify-content-center text-capitalize">lorem</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 style-3">
                                 <div class="tour-item ">
                                     <div class="tour-desc bg-white">
-                                      <div class="tour-text color-grey-3 text-center">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s”</div>
+                                      <div class="tour-text color-grey-3 text-center text-capitalize">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s”</div>
                                         <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="https://www.vivantaa.com/wp-content/uploads/elementor/thumbs/IMG-20211011-WA0019-peeo5uybmrqi2vwspzsmbty2t9115j4bscex5wfxq4.jpg" alt=""></div>
-                                        <div class="link-name d-flex justify-content-center">Balbir Kaur</div>
-                                        <div class="link-position d-flex justify-content-center">lorem</div>
+                                        <div class="link-name d-flex justify-content-center text-capitalize">Balbir Kaur</div>
+                                        <div class="link-position d-flex justify-content-center text-capitalize">lorem</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 style-3">
                                 <div class="tour-item ">
                                     <div class="tour-desc bg-white">
-                                      <div class="tour-text color-grey-3 text-center">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s”</div>
+                                      <div class="tour-text color-grey-3 text-center text-capitalize">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s”</div>
                                         <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="https://www.vivantaa.com/wp-content/uploads/elementor/thumbs/IMG-20211011-WA0022-peeo62h15g0snrlvi31mvs1rkbzyv3y6hdmt044scc.jpg" alt=""></div>
-                                        <div class="link-name d-flex justify-content-center">Balbir Kaur</div>
-                                        <div class="link-position d-flex justify-content-center">lorem</div>
+                                        <div class="link-name d-flex justify-content-center text-capitalize">Balbir Kaur</div>
+                                        <div class="link-position d-flex justify-content-center text-capitalize">lorem</div>
                                     </div>
                                 </div>
                             </div>
@@ -889,7 +888,7 @@ the ecosystem for select projects. -->
                 <ul class="list-unstyled">
                   <li style="text-align: left">
                     <a href="#!" class="text-dark text-left"
-                      >Deal Sourcing & Matchmaking Services</a
+                      >Deal Sourcing & Match Making Services</a
                     >
                   </li>
                   <li style="text-align: left">
@@ -920,13 +919,13 @@ the ecosystem for select projects. -->
 
                 <ul class="list-unstyled">
                   <li>
-                    <a href="#!">For project developers</a>
+                    <a href="#!" class="text-capitalize">For project developers</a>
                   </li>
                   <li>
-                    <a href="#!">For project investors</a>
+                    <a href="#!" class="text-capitalize">For project investors</a>
                   </li>
                   <li>
-                    <a href="#!">For Brokers & Agents</a>
+                    <a href="#!" class="text-capitalize">For Brokers & Agents</a>
                   </li>
                 </ul>
               </div>
@@ -963,10 +962,10 @@ the ecosystem for select projects. -->
 
                 <ul class="list-unstyled">
                   <li>
-                    <a href="#!">Finxtradaz pvt limited</a>
+                    <a href="#!" class="text-capitalize">Finxtradaz pvt limited</a>
                   </li>
                   <li>
-                    <a href="#!">Mumbai, Maharashtra</a>
+                    <a href="#!" class="text-capitalize">Mumbai, Maharashtra</a>
                   </li>
                   <li>
                     <a href="#!">operation@greenfin.ai</a>
@@ -983,7 +982,7 @@ the ecosystem for select projects. -->
           <!-- Footer Links -->
 
           <!-- Copyright -->
-          <div class="footer-copyright text-center py-3">
+          <div class="footer-copyright text-center py-3 text-capitalize">
             Copyright 2022 Finxtradaz pvt limited. All rights reserved.
           </div>
           <!-- Copyright -->
@@ -1072,12 +1071,21 @@ the ecosystem for select projects. -->
         margin: 0px;
       }
     </style>
+    <script>
+      // var openmenu=true;
+      function openmenu(){
+        // alert("xcv")
+        // if(openmenu==true){
+          // document.getElementById('navbarNav').style.display='block';
+          document.getElementById("navbarNav");
+  element.classList.add("main-navbarfix");
+        //   openmenu=false;
+        // }else{
+        //   document.getElementById('navbarNav').style.display='block';
+        //   openmenu=true;
+        // }
+      }
+    </script>
   </body>
-  <loom-container id="lo-engage-ext-container"
-    ><loom-shadow classname="resolved"></loom-shadow></loom-container
-  ><loom-container id="lo-companion-container"
-    ><loom-shadow classname="resolved"></loom-shadow></loom-container
-  ><grammarly-desktop-integration
-    data-grammarly-shadow-root="true"
-  ></grammarly-desktop-integration>
+
 </html>
