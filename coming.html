@@ -1,0 +1,480 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenFin</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+
+    <link rel="stylesheet" href="assets/vendors/iconly/bold.css" />
+
+    <link
+      rel="stylesheet"
+      href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/bootstrap-icons/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css"
+      integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+      integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style type="text/css">
+      * {
+        margin: 0px;
+        padding: 0px;
+        /* font-family: "Ubuntu", sans-serif !important; */
+        font-family: "Montserrat", sans-serif !important;
+      }
+      .primaryfont {
+        font-family: "Montserrat", sans-serif !important;
+      }
+      .textcolor {
+        color: #06113c !important;
+      }
+      .navbackgroundcolor {
+        background-color: #ffffff !important;
+        /* color: #000000; */
+      }
+      .menu-item .menu-link {
+        color: #6c757d !important;
+      }
+
+      .maincolorblue {
+        color: #06113c;
+      }
+
+      .maincolorgreen {
+        color: #7bb835;
+      }
+      li a {
+        color: black;
+      }
+      div ul li {
+        text-align: left;
+      }
+      h5 {
+        text-align: left;
+      }
+
+      .home-testimonial {
+        background-color: #231834;
+        height: 380px;
+      }
+
+      .main-navbarfix {
+        position: relative;
+        width: 100% !important;
+        display: block !important;
+      }
+
+      .home-testimonial-bottom {
+        background-color: #f8f8f8;
+        transition: background 0.3s, border 0.3s, border-radius 0.3s,
+          box-shadow 0.3s;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        position: relative;
+        height: 130px;
+        top: 190px;
+      }
+
+      .home-testimonial h3 {
+        color: var(--orange);
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+
+      .home-testimonial h2 {
+        color: white;
+        font-size: 28px;
+        font-weight: 700;
+      }
+
+      .testimonial-inner {
+        position: relative;
+        top: -174px;
+      }
+
+      .testimonial-pos {
+        position: relative;
+        top: 24px;
+      }
+
+      .testimonial-inner .tour-desc {
+        border-radius: 5px;
+        padding: 40px;
+      }
+
+      .color-grey-3 {
+        font-family: "Montserrat", Sans-serif;
+        font-size: 14px;
+        color: #6c83a2;
+      }
+
+      .testimonial-inner img.tm-people {
+        width: 60px;
+        height: 60px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        max-width: none;
+      }
+
+      .link-name {
+        font-family: "Montserrat", Sans-serif;
+        font-size: 14px;
+        color: #6c83a2;
+      }
+
+      .link-position {
+        font-family: "Montserrat", Sans-serif;
+        font-size: 12px;
+        color: #6c83a2;
+      }
+
+      .navtitletext {
+        white-space: nowrap;
+        text-transform: capitalize;
+        font-family: "Montserrat";
+        font-weight: 100 !important;
+        color: #51565c !important;
+        font-size: 15px !important;
+      }
+    </style>
+  </head>
+  <body
+    data-new-gr-c-s-check-loaded="14.1056.0"
+    data-gr-ext-installed=""
+    style="background: #ffffff"
+  >
+    <div id="app">
+      <div id="main" class="layout-horizontal">
+        <header class="navbackgroundcolor">
+          <div class="container">
+            <nav
+              class="navbar navbar-expand-lg navbar-light bg-light mb-4 mb-lg-0 navbackgroundcolor"
+            >
+              <div class="container-fluid">
+                <div class="logo mt-lg-4">
+                  <a href="index.html"
+                    ><img
+                      src="images/greenFinLogo.png"
+                      alt="Logo"
+                      srcset=""
+                      style="height: 130px !important"
+                  /></a>
+                </div>
+
+                <button
+                  class="burger-btn d-block d-xl-none btn"
+                  onclick="openmenu()"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <i class="bi bi-justify fs-1"></i>
+                </button>
+                <nav class="main-navbar navbackgroundcolor" id="navbarNav">
+                  <div class="container">
+                    <ul class="navbar-nav">
+                      <li class="menu-item has-sub nav-item">
+                        <a href="#" class="menu-link">
+                          <!-- <i class="bi bi-stack"></i> -->
+                          <span class="navtitletext">industries</span>
+                        </a>
+                        <div class="submenu">
+                          <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
+                          <div class="submenu-group-wrapper">
+                            <ul class="submenu-group">
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >Solar Energy</a
+                                >
+                              </li>
+
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >Wind Energy</a
+                                >
+                              </li>
+
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >Hydropower Energy</a
+                                >
+                              </li>
+
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >Waste energy</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="menu-item has-sub nav-item">
+                        <a href="#" class="menu-link">
+                          <!-- <i class="bi bi-stack"></i> -->
+                          <span class="navtitletext">For project owners</span>
+                        </a>
+                        <div class="submenu">
+                          <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
+                          <div class="submenu-group-wrapper">
+                            <ul class="submenu-group">
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >Short term imports</a
+                                >
+                              </li>
+
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >Mid term imports</a
+                                >
+                              </li>
+
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >Long term imports</a
+                                >
+                              </li>
+
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >Project finance ECA/ECB</a
+                                >
+                              </li>
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >Procurement financing</a
+                                >
+                              </li>
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >Export of product & services</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="menu-item active has-sub">
+                        <a href="#" class="menu-link">
+                          <!-- <i class="bi bi-grid-1x2-fill"></i> -->
+                          <span class="navtitletext"> For Investors</span>
+                        </a>
+                        <div class="submenu">
+                          <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
+                          <div class="submenu-group-wrapper">
+                            <ul class="submenu-group">
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >Short term finance</a
+                                >
+                              </li>
+
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >Mid term finance</a
+                                >
+                              </li>
+
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >Long term finance</a
+                                >
+                              </li>
+
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >ECB/ECL loans</a
+                                >
+                              </li>
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >Equity participation</a
+                                >
+                              </li>
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >Green bonds</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="menu-item has-sub">
+                        <a href="#" class="menu-link">
+                          <!-- <i class="bi bi-file-earmark-medical-fill"></i> -->
+                          <span class="navtitletext">Channel partners</span>
+                        </a>
+                        <div class="submenu">
+                          <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
+                          <div class="submenu-group-wrapper">
+                            <ul class="submenu-group">
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >India's</a
+                                >
+                              </li>
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >Other evolving markets</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="menu-item has-sub">
+                        <a href="#" class="menu-link">
+                          <!-- <i class="bi bi-file-earmark-fill"></i> -->
+                          <span class="navtitletext">About us</span>
+                        </a>
+                        <div class="submenu">
+                          <!-- Wrap to submenu-group-wrapper if you want 3-level submenu. Otherwise remove it. -->
+                          <div class="submenu-group-wrapper">
+                            <ul class="submenu-group">
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >Who we are</a
+                                >
+                              </li>
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >What we do</a
+                                >
+                              </li>
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >How we do</a
+                                >
+                              </li>
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >Management</a
+                                >
+                              </li>
+
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >Mission</a
+                                >
+                              </li>
+
+                              <li class="submenu-item">
+                                <a href="#" class="submenu-link navtitletext"
+                                  >News</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+
+                      <button
+                        class="btn btn-primary btn btn-lg text-uppercase px-4 f6 navtitletext"
+                        type="button"
+                        style="
+                          display: inline-block;
+                          margin-bottom: 0;
+                          background-color: #7bb835;
+                          border: 0px solid #0e185f;
+                          color: rgb(255, 255, 255) !important;
+                          font-weight: 400 !important;
+                        "
+                      >
+                        sign Up
+                      </button>
+                    </ul>
+                  </div>
+                </nav>
+                <!-- </div> -->
+              </div>
+            </nav>
+          </div>
+        </header>
+        <div class="container-fluid">
+          <div
+            class="container"
+            style="
+              background-image: url('images/comingsoon.jpg');
+              height: 100%;
+              background-size: cover;
+            "
+          >
+            <div class="text-center">
+              <button
+                class="btn btn-primary btn btn-lg text-uppercase px-4 f6 navtitletext"
+                type="button"
+                style="
+                  display: inline-block;
+                  margin-bottom: 0;
+                  background-color: #7bb835;
+                  border: 0px solid #0e185f;
+                  color: rgb(255, 255, 255) !important;
+                  font-weight: 400 !important;
+                "
+              >
+                Go Back
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
