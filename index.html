@@ -181,6 +181,34 @@
   color: #51565c !important;
   font-size: 15px !important;
 }
+
+.hero-section{
+  background-image: url('https://img.freepik.com/free-vector/ecology-environmental-concept-earth-symbol-with-green-leaves-around-cities-help-world-with-eco-friendly-ideas_29120-89.jpg?w=1380');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 450px;
+}
+
+.hero-section-contain{
+  padding-top: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-section{ 
+    /* background-color: lightblue !important; */
+    /* background-image: url('https://img.freepik.com/free-vector/ecology-concept-paper-style_23-2148438856.jpg?t=st=1654106547~exp=1654107147~hmac=ee8ccc26f4cc2d653493e6383c9f77e76452673d9679a73400861591901cd65d&w=826'); */
+    background-image: url('https://img.freepik.com/free-vector/ecology-environmental-concept-earth-symbol-with-green-leaves-around-cities-help-world-with-eco-friendly-ideas_29120-89.jpg?w=1380');
+  background-repeat: no-repeat;
+  background-size: cover;
+    /* background-repeat: no-repeat;
+    background-size: cover;  */
+  }
+  .hero-section-contain{
+  padding-top: 100px;
+}
+ 
+}
+
     </style>
   </head>
 
@@ -405,11 +433,12 @@
         </header>
 
         <div
-          class="container-fluid"
-          style="background-color: #06113c; height: 450px"
+
+          class="container-fluid hero-section"
+          
         >
-          <div class="container pt-5" style="padding-top: 130px !important">
-            <p class="text-white text-center text-capitalize">Gateway to ESG Financing </p>
+          <div class="container  hero-section-contain" >
+            <p class="fw-bold text-center text-capitalize text-dark">Gateway to ESG Financing </p>
             <!-- <p class="text-white text-center h4 text-capitalize">
               powerful renewable energy finance platform.
             </p> -->
@@ -548,6 +577,7 @@
                       >100+</span
                     >
                   </div>
+                  
                   <p
                     class="h5 p-4 text-center fw-bolder text-capitalize"
                     style="color: #06113c"
@@ -598,6 +628,7 @@
                     src="https://www.youtube.com/embed/jmX-HXEJVXQ"
                    
                     height="300"
+                    width="60%"
                     allowfullscreen=""
                   ></iframe>
                 </div>
@@ -1128,6 +1159,7 @@ the ecosystem for select projects. -->
         // }
       }
     </script>
+    
   </body>
 
 </html>
