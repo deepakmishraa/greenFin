@@ -573,9 +573,9 @@
                 "
                 >
                   <div class="text-center pt-4" style="height: 100px !important">
-                    <span class="h1 textcolor" style="color: #06113c"
-                      >100+</span
-                    >
+                    <span class="h1 textcolor" id="value"
+                      ></span
+                    ><span  class="h1 textcolor"  style="color: #06113c">+</span>
                   </div>
                   
                   <p
@@ -596,7 +596,8 @@
                   "
                 >
                   <div class="text-center pt-4" style="height: 100px !important">
-                    <span class="h1" style="color: #06113c">50%</span>
+                    <span class="h1" id="value2" style="color: #06113c"></span>
+                    <span class="h1"  style="color: #06113c">%</span>
                   </div>
                   <p
                     class="h5 p-4 text-center text-capitalize fw-bolder textcolor"
@@ -1122,7 +1123,7 @@ the ecosystem for select projects. -->
         border-bottom: 1px solid #fff;
       }
       .tb_button.hover {
-        borer: 2px outset #def;
+        border: 2px outset #def;
         background-color: #f8f8f8 !important;
       }
       .ws_toolbar {
@@ -1158,6 +1159,27 @@ the ecosystem for select projects. -->
         //   openmenu=true;
         // }
       }
+
+      function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (end - start) + start);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+const obj = document.getElementById("value");
+const objper= document.getElementById("value2");
+
+animateValue(obj, 0, 100, 5000);
+animateValue(objper, 0, 50, 5000);
+
+
     </script>
     
   </body>
