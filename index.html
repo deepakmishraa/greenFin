@@ -199,12 +199,16 @@
     /* background-image: url('https://img.freepik.com/free-vector/ecology-concept-paper-style_23-2148438856.jpg?t=st=1654106547~exp=1654107147~hmac=ee8ccc26f4cc2d653493e6383c9f77e76452673d9679a73400861591901cd65d&w=826'); */
     background-image: url('https://img.freepik.com/free-vector/ecology-environmental-concept-earth-symbol-with-green-leaves-around-cities-help-world-with-eco-friendly-ideas_29120-89.jpg?w=1380');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
     /* background-repeat: no-repeat;
     background-size: cover;  */
   }
   .hero-section-contain{
   padding-top: 100px;
+}
+.iframeSize{
+  height: 100%;
+
 }
  
 }
@@ -219,29 +223,39 @@
   >
     <div id="app">
       <div id="main" class="layout-horizontal">
-        <header class="navbackgroundcolor ">
+        <header class="navbackgroundcolor">
           <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4 mb-lg-0  navbackgroundcolor">
-            <div class="container-fluid ">
-              <div class="logo mt-lg-4 ">
-                <a href="index.html"
-                  ><img
-                    src="images/greenFinLogo.png"
-                    alt="Logo"
-                    srcset=""
+            <nav
+              class="navbar navbar-expand-lg navbar-light bg-light mb-4 mb-lg-0 navbackgroundcolor"
+            >
+              <div class="container-fluid">
+                <div class="logo mt-lg-4">
+                  <a href="index.html"
+                    ><img
+                      src="images/greenFinLogo.png"
+                      alt="Logo"
+                      srcset=""
+                      style="height: 130px !important"
+                  /></a>
+                </div>
 
-                    style="height: 130px !important"
-                /></a>
-              </div>
-
-              <button class="burger-btn d-block d-xl-none btn" onclick="openmenu()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi bi-justify fs-1"></i>
-              </button>
-                <nav class="main-navbar navbackgroundcolor "  id="navbarNav">
+                <button
+                  class="burger-btn d-block d-xl-none btn"
+                  onclick="openmenu()"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <i class="bi bi-justify fs-1"></i>
+                </button>
+                <nav class="main-navbar navbackgroundcolor" id="navbarNav">
                   <div class="container">
                     <ul class="navbar-nav">
                       <li class="menu-item has-sub nav-item">
-                        <a href="#" class="menu-link">
+                        <a href="coming.html" class="menu-link">
                           <!-- <i class="bi bi-stack"></i> -->
                           <span class="navtitletext">industries</span>
                         </a>
@@ -250,28 +264,42 @@
                           <div class="submenu-group-wrapper">
                             <ul class="submenu-group">
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext">Solar Energy</a>
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
+                                  >Solar Energy</a
+                                >
                               </li>
-      
+
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext">Wind Energy</a>
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
+                                  >Wind Energy</a
+                                >
                               </li>
-      
+
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext"
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
                                   >Hydropower Energy</a
                                 >
                               </li>
-      
+
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext">Waste energy</a>
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
+                                  >Waste energy</a
+                                >
                               </li>
                             </ul>
                           </div>
                         </div>
-                      </li>                      
+                      </li>
                       <li class="menu-item has-sub nav-item">
-                        <a href="#" class="menu-link">
+                        <a href="coming.html" class="menu-link">
                           <!-- <i class="bi bi-stack"></i> -->
                           <span class="navtitletext">For project owners</span>
                         </a>
@@ -280,35 +308,57 @@
                           <div class="submenu-group-wrapper">
                             <ul class="submenu-group">
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext">Short term imports</a>
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
+                                  >Short term imports</a
+                                >
                               </li>
-      
+
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext">Mid term imports</a>
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
+                                  >Mid term imports</a
+                                >
                               </li>
-      
+
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext"
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
                                   >Long term imports</a
                                 >
                               </li>
-      
+
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext">Project finance ECA/ECB</a>
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
+                                  >Project finance ECA/ECB</a
+                                >
                               </li>
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext">Procurement financing</a>
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
+                                  >Procurement financing</a
+                                >
                               </li>
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext">Export of product & services</a>
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
+                                  >Export of product & services</a
+                                >
                               </li>
                             </ul>
                           </div>
                         </div>
                       </li>
-      
+
                       <li class="menu-item active has-sub">
-                        <a href="#" class="menu-link">
+                        <a href="coming.html" class="menu-link">
                           <!-- <i class="bi bi-grid-1x2-fill"></i> -->
                           <span class="navtitletext"> For Investors</span>
                         </a>
@@ -317,39 +367,57 @@
                           <div class="submenu-group-wrapper">
                             <ul class="submenu-group">
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext"
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
                                   >Short term finance</a
                                 >
                               </li>
-      
+
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext"
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
                                   >Mid term finance</a
                                 >
                               </li>
-      
+
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext"
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
                                   >Long term finance</a
                                 >
                               </li>
-      
+
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext">ECB/ECL loans</a>
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
+                                  >ECB/ECL loans</a
+                                >
                               </li>
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext">Equity participation</a>
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
+                                  >Equity participation</a
+                                >
                               </li>
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext">Green bonds</a>
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
+                                  >Green bonds</a
+                                >
                               </li>
                             </ul>
                           </div>
                         </div>
                       </li>
-      
+
                       <li class="menu-item has-sub">
-                        <a href="#" class="menu-link">
+                        <a href="coming.html" class="menu-link">
                           <!-- <i class="bi bi-file-earmark-medical-fill"></i> -->
                           <span class="navtitletext">Channel partners</span>
                         </a>
@@ -358,21 +426,26 @@
                           <div class="submenu-group-wrapper">
                             <ul class="submenu-group">
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext">India's</a>
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
+                                  >India's</a
+                                >
                               </li>
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext">Other evolving markets</a>
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
+                                  >Other evolving markets</a
+                                >
                               </li>
                             </ul>
                           </div>
                         </div>
                       </li>
-      
-      
 
-      
                       <li class="menu-item has-sub">
-                        <a href="#" class="menu-link">
+                        <a href="coming.html" class="menu-link">
                           <!-- <i class="bi bi-file-earmark-fill"></i> -->
                           <span class="navtitletext">About us</span>
                         </a>
@@ -381,56 +454,77 @@
                           <div class="submenu-group-wrapper">
                             <ul class="submenu-group">
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext">Who we are</a>
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
+                                  >Who we are</a
+                                >
                               </li>
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext">What we do</a>
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
+                                  >What we do</a
+                                >
                               </li>
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext">How we do</a>
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
+                                  >How we do</a
+                                >
                               </li>
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext">Management</a>
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
+                                  >Management</a
+                                >
                               </li>
-      
+
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext">Mission</a>
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
+                                  >Mission</a
+                                >
                               </li>
-      
+
                               <li class="submenu-item">
-                                <a href="#" class="submenu-link navtitletext">News</a>
+                                <a
+                                  href="coming.html"
+                                  class="submenu-link navtitletext"
+                                  >News</a
+                                >
                               </li>
                             </ul>
                           </div>
                         </div>
                       </li>
 
-             
-              <button
-              class="btn btn-primary btn btn-lg text-uppercase px-4 f6 navtitletext"
-              type="button"
-              style="
-                display: inline-block;
-                margin-bottom: 0;
-                background-color: #7bb835;
-                border: 0px solid #0e185f;
-                color: rgb(255, 255, 255) !important;
-                font-weight: 400 !important;
-              "
-            >
-                    sign Up
-            </button>
-
+                      <a
+                      href="coming.html"
+                        class="btn btn-primary btn btn-lg text-uppercase px-4 f6 navtitletext"
+                        style="
+                          display: inline-block;
+                          margin-bottom: 0;
+                          background-color: #7bb835;
+                          border: 0px solid #0e185f;
+                          color: rgb(255, 255, 255) !important;
+                          font-weight: 400 !important;
+                        "
+                      >
+                        sign Up
+                    </a>
                     </ul>
                   </div>
                 </nav>
-              <!-- </div> -->                                         
-
-
-            </div>
-          </nav>
+                <!-- </div> -->
+              </div>
+            </nav>
           </div>
         </header>
+
 
         <div
 
@@ -438,15 +532,15 @@
           
         >
           <div class="container  hero-section-contain" >
-            <p class="fw-bold text-center text-capitalize text-dark">Gateway to ESG Financing </p>
+            <p class="fw-bold text-center text-capitalize text-dark"> </p>
             <!-- <p class="text-white text-center h4 text-capitalize">
               powerful renewable energy finance platform.
             </p> -->
 
             <div class="d-grid gap-2 d-md-flex justify-content-center mt-5">
-              <button
+              <a
+              href="coming.html"
                 class="btn btn-primary btn-lg me-md-5"
-                type="button"
                 style="
                   padding-top: 18px !important;
                   padding-bottom: 18px !important;
@@ -456,10 +550,12 @@
                   background-color: #0e185f;
                   border: 1px solid white;
                 "
+
               >
                 Investor
-              </button>
-              <button
+            </a>
+              <a
+              href="coming.html"
                 class="btn btn-primary btn-lg me-md-5"
                 type="button"
                 style="
@@ -471,10 +567,12 @@
                   background-color: #0e185f;
                   border: 1px solid white;
                 "
+                                href="/coming.html"
               >
                 Developers
-              </button>
-              <button
+          </a>
+              <a
+              href="coming.html"
                 class="btn btn-primary btn-lg "
                 type="button"
                 style="
@@ -486,9 +584,10 @@
                   background-color: #0e185f;
                   border: 1px solid white;
                 "
+                                href="/coming.html"
               >
               Channel partners
-              </button>
+        </a>
               
             </div>
           </div>
@@ -510,7 +609,7 @@
                     
                   "
                 >
-                  <div class="text-center p-5" style="height: 182px !important">
+                  <div class="text-center p-md-5 p-4" style="height: 182px !important">
                     <span class="h5 text-center text-capitalize textcolor primaryfont  "
                       >Global renewable energy market place</span
                     >
@@ -520,7 +619,7 @@
               </div>
               <div class="col-md-3 offset-md-0">
                 <div
-                  class="card p-5 bg-light border"
+                  class="card p-md-5 p-4 bg-light border"
                   style="
                   height: 150px !important;
                   box-shadow: rgba(255, 255, 255, 0.45) 0px 25px 20px -20px;
@@ -538,7 +637,7 @@
               </div>
               <div class="col-md-3 ">
                 <div
-                  class="card p-5 bg-light border"
+                  class="card p-md-5 p-4  bg-light border"
                   style="
                   height: 150px !important;
                   box-shadow: rgba(255, 255, 255, 0.45) 0px 25px 20px -20px;
@@ -600,7 +699,7 @@
                     <span class="h1"  style="color: #06113c">%</span>
                   </div>
                   <p
-                    class="h5 p-4 text-center text-capitalize fw-bolder textcolor"
+                    class="h5 p-3 text-center text-capitalize fw-bolder textcolor"
                     style="color: #06113c"
                   >
                     reduction on execution
@@ -626,11 +725,12 @@
                 >
                 <!-- style="width: 50%" -->
                   <iframe
-                    src="https://www.youtube.com/embed/jmX-HXEJVXQ"
+                  src="https://www.youtube.com/embed/pkTDMIE7ZQ4"
                    
                     height="300"
                     width="60%"
                     allowfullscreen=""
+                    class="iframeSize border"
                   ></iframe>
                 </div>
                 <div class="card-body">
@@ -668,7 +768,9 @@ projects.
               workflow. Making green investments fast, easy, liquid and economically viable
               for all parties involved.
             </p>
-            <button class="btn btn-primary btn-lg mb-4" type="button" style="
+            <a
+            href="coming.html"
+             class="btn btn-primary btn-lg mb-4" type="button" style="
                 padding-top: 18px !important;
                 padding-bottom: 18px !important;
                 min-width: 192px;
@@ -678,7 +780,7 @@ projects.
                 border: 1px solid rgb(0, 0, 0);
               ">
               Sign Up For Free
-            </button>
+          </a>
           </div>
         </div>
         <!-- <div class="container-fluid">
@@ -862,9 +964,9 @@ the ecosystem for select projects. -->
                   />
                 </div>
                 <div class="d-grid gap-2 d-md-flex justify-content-end mt-5">
-                  <button
+                  <a
+                  href="coming.html"
                     class="btn btn-primary btn-lg me-md-5"
-                    type="button"
                     style="
                       padding-top: 18px !important;
                       padding-bottom: 18px !important;
@@ -876,7 +978,7 @@ the ecosystem for select projects. -->
                     "
                   >
                     Submit
-                  </button>
+                </a>
                 </div>
               </div>
             </div>
@@ -1036,7 +1138,7 @@ the ecosystem for select projects. -->
 
                 <ul class="list-unstyled">
                   <li>
-                    <a href="#!" class="text-capitalize">Finxtradaz Pvt Limited</a>
+                    <a href="#!" class="text-capitalize">Finxtradez Private Limited</a>
                   </li>
                   <li>
                     <a href="#!" class="text-capitalize">Mumbai, Maharashtra</a>
@@ -1057,7 +1159,7 @@ the ecosystem for select projects. -->
 
           <!-- Copyright -->
           <div class="footer-copyright text-center py-3 text-capitalize">
-            Copyright 2022 Finxtradaz Pvt Limited. All rights reserved.
+            Copyright 2022 Finxtradez Private Limited. All rights reserved.
           </div>
           <!-- Copyright -->
         </footer>
